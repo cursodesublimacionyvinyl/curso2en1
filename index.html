@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Mi aula | Curso de Sublimación 2 en 1</title>
+  <meta name="description" content="Acceso privado de estudiantes al Curso de Sublimación 2 en 1." />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./config.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="header">
+      <div class="brand">
+        <div class="brandmark" aria-hidden="true">S<span>2</span></div>
+        <div>
+          <strong>CURSO DE SUBLIMACIÓN 2 EN 1</strong>
+          <span>Portal privado de estudiantes</span>
+        </div>
+      </div>
+      <div class="status"><span class="pulse"></span><span>Acceso protegido · 30 días</span></div>
+    </header>
+    <main class="main" id="main">
+      <section class="setup" id="setup" hidden>
+        <div class="setupicon">⚙</div>
+        <h1>Configurar conexión</h1>
+        <p>Falta la URL de Apps Script en <code>config.js</code>. El administrador debe publicar Apps Script y completar ese archivo antes de usar el portal.</p>
+      </section>
+      <section class="framebox" id="framebox" hidden aria-label="Portal seguro de estudiantes">
+        <iframe title="Registro, inicio de sesión y aula" id="studentFrame" loading="eager"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="clipboard-write" sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads"></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Curso de Sublimación · Acceso individual e intransferible</span>
+      <a id="fallback" href="#" target="_blank" rel="noopener noreferrer" hidden>¿No carga? Abrir acceso directo ↗</a>
+    </footer>
+  </div>
+  <script src="./portal.js"></script>
+</body>
+</html>
